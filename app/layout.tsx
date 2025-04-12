@@ -25,6 +25,7 @@ export default function RootLayout({
         <Suspense fallback={<Loading />}>
         </Suspense>
         <Footer /> */}
+        {children}
       </body>
     </html>
   );

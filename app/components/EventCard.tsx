@@ -8,54 +8,54 @@ interface EventCardData {
   date?: string;
   description?: string;
   showDetails?: boolean;
-  classname: string;
+  className: string;
 }
 export const events: EventCardData[] = [
   {
     id: 1,
-    image: "/public/topleft.svg",
+    image: "/topleft.svg",
     altText: "Code Steps 4.0 Event",
     title: "Code Steps 4.0",
     date: "25/2/2024",
     description:
       "The event successfully engaged young students across two schools...",
-    classname: "lg:w-[752px]  md:w-[calc(50%-16px)]  w-[90%]  aspect-video",
+    className: "lg:w-[752px]  md:w-[calc(50%-16px)]  w-[90%]  aspect-video",
   },
   {
     id: 2,
-    image: "/topRight.svg",
+    image: "/topright.svg",
     altText: "IEEE Event",
     title: "IEEE Event",
     date: "15/3/2024",
     description:
       "Join us for an exciting IEEE workshop on emerging technologies...",
-    classname: "lg:w-[528px] md:w-[calc(50%-16px)]  w-[90%]  aspect-square",
+    className: "lg:w-[528px] md:w-[calc(50%-16px)]  w-[90%]  aspect-square",
   },
   {
     id: 3,
-    image: "/public/btnleft.svg",
+    image: "/btnleft.svg",
     altText: "Embedded Systems Event",
     title: "Embedded Systems",
     date: "10/4/2024",
     description:
       "Explore the world of embedded systems with hands-on projects...",
-    classname: "lg:w-[752px]  md:w-[calc(50%-16px)] w-[90%]  aspect-video",
+    className: "lg:w-[752px]  md:w-[calc(50%-16px)] w-[90%]  aspect-video",
   },
   {
     id: 4,
-    image: "/btnRight.svg",
+    image: "/btnright.svg",
     altText: "Group Event",
     title: "Group Collaboration",
     date: "20/4/2024",
     description: "Team up for a collaborative coding challenge...",
-    classname: "lg:w-[528px] md:w-[calc(50%-16px)] w-[90%]  aspect-square",
+    className: "lg:w-[528px] md:w-[calc(50%-16px)] w-[90%]  aspect-square",
   },
 ];
 export default function EventCard() {
   return events.map((event) => (
     <article
       key={event.id}
-      className={`group overflow-hidden relative rounded-3xl ${event.classname}`}
+      className={`group overflow-hidden relative rounded-3xl ${event.className}`}
     >
       <Image
         src={event.image}

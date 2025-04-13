@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Cairo } from "next/font/google";
-import Nav from "./components/Nav";
+import Nav from "@/app/components/Nav";
+import Footer from "./components/Footer";
 
 const cairo = Cairo({
   subsets: ["latin"],
@@ -19,10 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${cairo.className}  antialiased bg-[#141414] h-[1000px]`}
-      >
+    <html lang="en" className="custom-scrollbar">
+      <body className={`${cairo.className}  antialiased bg-[#141414] `}>
         <Nav />
         {/* <NavBar />
         <section className=" pt-36 pb-20 lg:pt-52">{children}</section>
@@ -30,6 +29,7 @@ export default function RootLayout({
         </Suspense>
         <Footer /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );

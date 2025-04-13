@@ -2,7 +2,8 @@ import Image from "next/image";
 import Logo from "./components/Logo";
 import CornerBrackets from "@/components/ui/CornerBrackets";
 import GoalCard from "./components/GoalCard";
-import services from "@/data.json";
+import EventCard from "./components/EventCard";
+import { events, services, stats } from "@/data/index";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         >
           <CornerBrackets />
 
-          <div className="relative md:h-[400px] h-[340px] w-[65%] flex-shrink-0 overflow-hidden rounded-[16px]  md:w-[27%]">
+          <div className="relative md:h-[400px] sm:h-[340px] h-[290px] lg:w-[27%] w-[35%] max-md:w-[60%]  flex-shrink-0 overflow-hidden rounded-[16px] whoImage ">
             <Image
               src="/whoSec.png"
               alt="IEEE Mansoura Computer Society Chapter"
@@ -64,6 +65,111 @@ export default function Home() {
           {services.map((g) => (
             <GoalCard key={g.id} title={g.title} description={g.description} />
           ))}
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-16 items-center px-0 py-24 bg-black bg-opacity-10">
+        <h1 className="font-[Merriweather] w-full text-4xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
+          OUR EVENTS
+        </h1>
+        <div className="flex flex-wrap gap-8 justify-center px-4 py-0 max-w-[1440px] w-full">
+          {events.map((event) => (
+            <EventCard
+              key={event.id}
+              image={event.image}
+              altText={event.altText}
+              title={event.title}
+              date={event.date}
+              description={event.description}
+              className={event.className}
+            />
+          ))}
+        </div>
+        <button
+          className={`gap-2.5 px-14 py-3 h-16 text-2xl font-extrabold tracking-wider text-center bg-amber-500 rounded-[35px] text-neutral-100 w-[347px] max-md:px-14 max-md:py-2.5 max-md:h-14 max-md:text-2xl max-md:w-[300px] max-sm:px-10 max-sm:py-2 max-sm:h-12 max-sm:text-xl max-sm:w-[250px] hover:bg-amber-600 transition-colors `}
+        >
+          Explore More
+        </button>
+      </section>
+      <section className="w-[90%] mx-auto py-16 px-4">
+        <h2 className="font-[Merriweather] text-center text-amber-500 text-4xl font-bold mb-12 tracking-wide max-sm:text-3xl">
+          OUR IMPACT IN NUMBERS
+        </h2>
+
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6 ">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="group relative w-full  md:aspect-square aspect-video 
+               bg-[#1f1f1f] rounded-xl flex flex-col items-center justify-center
+               transition-all duration-300 border-b-4 border-[#F7A708]
+               cursor-pointer hover:shadow-[0px_4px_10px_0px_#F7A708]"
+            >
+              <img
+                src="/outline.svg"
+                alt="Outline"
+                className="absolute left-3 top-4 h-[15%]
+                 opacity-0 group-hover:opacity-100
+                 transition-opacity duration-300
+                 pointer-events-none"
+              />
+
+              <div className="text-neutral-400 group-hover:text-amber-500 transition-colors mb-2">
+                {item.icon}
+              </div>
+
+              <p className="text-2xl font-extrabold text-neutral-200 group-hover:text-amber-500 transition-colors max-sm:text-xl">
+                {item.count}
+              </p>
+
+              <p className="text-base font-medium text-neutral-400 mt-1 group-hover:text-amber-500 transition-colors max-sm:text-sm">
+                {item.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="w-[90%] mx-auto flex flex-col justify-center pt-5 pb-12">
+        <h2 className="font-[Merriweather] text-center text-4xl font-bold tracking-[2.4px] text-amber-500 max-md:text-4xl">
+          OUR PARTNERS
+        </h2>
+
+        <div className="mt-16 flex w-full flex-wrap items-end justify-center gap-20 max-md:mt-10">
+          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800">
+            <div className="relative h-[50%] w-[150px]">
+              <Image
+                src="/iti.svg"
+                alt="Partner logo"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 200px"
+              />
+            </div>
+          </div>
+
+          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full bg-neutral-900 shadow-[0px_3px_3px_rgba(247,165,0,1)]">
+            <div className="relative h-[141px] w-[141px]">
+              <Image
+                src="/telda.svg"
+                alt="Partner logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 141px"
+              />
+            </div>
+          </div>
+
+          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800">
+            <div className="relative h-20 w-20">
+              <Image
+                src="/grrot.svg"
+                alt="Partner logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 80px"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

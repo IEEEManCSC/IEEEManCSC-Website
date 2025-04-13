@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
       <section className=" mx-auto flex flex-col gap-16 items-center px-0 py-24 bg-black bg-opacity-10">
-        <h1 className="w-full text-5xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
+        <h1 className="font-[Merriweather] w-full text-5xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
           OUR EVENTS
         </h1>
 

@@ -19,7 +19,7 @@ export const events: EventCardData[] = [
     date: "25/2/2024",
     description:
       "The event successfully engaged young students across two schools...",
-    className: "lg:w-[752px]  md:w-[calc(50%-16px)]  w-[90%]  aspect-video",
+    className: "lg:w-[700px]  md:w-[calc(50%-16px)]  w-[90%]  aspect-video",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export const events: EventCardData[] = [
     date: "15/3/2024",
     description:
       "Join us for an exciting IEEE workshop on emerging technologies...",
-    className: "lg:w-[528px] md:w-[calc(50%-16px)]  w-[90%]  aspect-square",
+    className: "lg:w-[450px] md:w-[calc(50%-16px)]  w-[90%]  aspect-square",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const events: EventCardData[] = [
     date: "10/4/2024",
     description:
       "Explore the world of embedded systems with hands-on projects...",
-    className: "lg:w-[752px]  md:w-[calc(50%-16px)] w-[90%]  aspect-video",
+    className: "lg:w-[700px]  md:w-[calc(50%-16px)] w-[90%]  aspect-video",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ export const events: EventCardData[] = [
     title: "Group Collaboration",
     date: "20/4/2024",
     description: "Team up for a collaborative coding challenge...",
-    className: "lg:w-[528px] md:w-[calc(50%-16px)] w-[90%]  aspect-square",
+    className: "lg:w-[450px] md:w-[calc(50%-16px)] w-[90%]  aspect-square",
   },
 ];
 export default function EventCard() {

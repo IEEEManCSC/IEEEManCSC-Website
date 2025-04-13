@@ -1,6 +1,6 @@
 import { MdGroups, MdEvent, MdHandshake, MdPerson } from "react-icons/md";
 import { LuBadgeCheck } from "react-icons/lu";
-import { ReactElement } from "react";
+import { ReactElement } from "react"; // Add this import
 
 interface StatItem {
   icon: ReactElement;
@@ -39,57 +39,7 @@ export const services: Service[] = [
     filledIcon: "/icons/brand-filled.svg",
   },
 ];
-export interface EventCardData {
-  id: number;
-  image: string;
-  altText: string;
-  title: string;
-  date: string;
-  description: string;
-  className: string;
-}
 
-export const events: EventCardData[] = [
-  {
-    id: 1,
-    image: "/topleft.svg",
-    altText: "Code Steps 4.0 Event",
-    title: "Code Steps 4.0",
-    date: "25/2/2024",
-    description:
-      "The event successfully engaged young students across two schools...",
-    className: "w-[90%] md:w-[calc(50%-16px)] lg:w-[752px] aspect-video",
-  },
-  {
-    id: 2,
-    image: "/topRight.svg",
-    altText: "IEEE Event",
-    title: "IEEE Event",
-    date: "15/3/2024",
-    description:
-      "Join us for an exciting IEEE workshop on emerging technologies...",
-    className: "w-[90%] md:w-[calc(50%-16px)] lg:w-[528px] aspect-square",
-  },
-  {
-    id: 3,
-    image: "/btnLeft.svg",
-    altText: "Embedded Systems Event",
-    title: "Embedded Systems",
-    date: "10/4/2024",
-    description:
-      "Explore the world of embedded systems with hands-on projects...",
-    className: "w-[90%] md:w-[calc(50%-16px)] lg:w-[528px] aspect-square",
-  },
-  {
-    id: 4,
-    image: "/btnRight.svg",
-    altText: "Group Event",
-    title: "Group Collaboration",
-    date: "20/4/2024",
-    description: "Team up for a collaborative coding challenge...",
-    className: "w-[90%] md:w-[calc(50%-16px)] lg:w-[752px] aspect-video",
-  },
-];
 export const stats: StatItem[] = [
   {
     icon: <MdGroups size={36} />,

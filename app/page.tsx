@@ -3,7 +3,7 @@ import Logo from "./components/Logo";
 import CornerBrackets from "@/components/ui/CornerBrackets";
 import GoalCard from "./components/GoalCard";
 import EventCard from "./components/EventCard";
-import { events, services, stats } from "@/data/index";
+import { services, stats } from "@/data/index";
 
 export default function Home() {
   return (
@@ -68,26 +68,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-16 items-center px-0 py-24 bg-black bg-opacity-10">
-        <h1 className="font-[Merriweather] w-full text-4xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
+      <section className=" mx-auto flex flex-col gap-16 items-center px-0 py-24 bg-black bg-opacity-10">
+        <h1 className="w-full text-5xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
           OUR EVENTS
         </h1>
-        <div className="flex flex-wrap gap-8 justify-center px-4 py-0 max-w-[1440px] w-full">
-          {events.map((event) => (
-            <EventCard
-              key={event.id}
-              image={event.image}
-              altText={event.altText}
-              title={event.title}
-              date={event.date}
-              description={event.description}
-              className={event.className}
-            />
-          ))}
+
+        <div className="w-[90%] flex flex-wrap gap-8 justify-center ">
+          <EventCard />
         </div>
-        <button
-          className={`gap-2.5 px-14 py-3 h-16 text-2xl font-extrabold tracking-wider text-center bg-amber-500 rounded-[35px] text-neutral-100 w-[347px] max-md:px-14 max-md:py-2.5 max-md:h-14 max-md:text-2xl max-md:w-[300px] max-sm:px-10 max-sm:py-2 max-sm:h-12 max-sm:text-xl max-sm:w-[250px] hover:bg-amber-600 transition-colors `}
-        >
+
+        <button className="mx-auto mt-1 px-14 py-3 text-2xl font-bold bg-amber-500 rounded-full hover:bg-amber-600 transition-colors">
           Explore More
         </button>
       </section>

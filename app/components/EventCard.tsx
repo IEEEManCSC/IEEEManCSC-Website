@@ -13,7 +13,7 @@ interface EventCardData {
 export const events: EventCardData[] = [
   {
     id: 1,
-    image: "/topleft.svg",
+    image: "/public/topLeft.svg",
     altText: "Code Steps 4.0 Event",
     title: "Code Steps 4.0",
     date: "25/2/2024",
@@ -33,7 +33,7 @@ export const events: EventCardData[] = [
   },
   {
     id: 3,
-    image: "/btnLeft.svg",
+    image: "/public/btnLeft.svg",
     altText: "Embedded Systems Event",
     title: "Embedded Systems",
     date: "10/4/2024",

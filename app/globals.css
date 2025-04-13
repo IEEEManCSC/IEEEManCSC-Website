@@ -8,7 +8,7 @@ body {
 /* Custom scrollbar styles */
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #e57373 #4a1c1c;
+  scrollbar-color: #f7a500b3 #141414;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -16,14 +16,14 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #4a1c1c;
+  background: #141414;
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #e57373;
+  background-color: #f7a500b3;
   border-radius: 10px;
-  border: 2px solid #4a1c1c;
+  border: 2px solid #141414;
 }
 
 .custom-scrollbarr::-webkit-scrollbar-button {
@@ -114,20 +114,25 @@ body {
     position: absolute;
     width: 1.5rem;
     height: 1.5rem;
-    border: 2px solid #f7a500; /* same accent color */
+    border: 2px solid #f7a500;
   }
-  /* top‑left */
+
   .corner-brackets::before {
     top: 0;
     left: 0;
     border-right: none;
     border-bottom: none;
   }
-  /* bottom‑right */
+
   .corner-brackets::after {
     bottom: 0;
     right: 0;
     border-left: none;
     border-top: none;
+  }
+  .whoImage {
+    @media (min-width: 570px) and (max-width: 760px) {
+      width: 48% !important;
+    }
   }
 }

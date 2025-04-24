@@ -4,6 +4,7 @@ import CornerBrackets from "@/components/ui/CornerBrackets";
 import GoalCard from "./components/GoalCard";
 import EventCard from "./components/EventCard";
 import { services, stats } from "@/data/index";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,8 +39,8 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex flex-col justify-center md:items-start items-center w-full md:w-2/3">
-            <h2 className="text-4xl font-bold text-[#F7A500] mb-2 font-[Merriweather]">
+          <div className="pt-3 flex gap-5 flex-col justify-center md:items-start items-center w-full md:w-2/3">
+            <h2 className="text-4xl font-bold text-[#F7A500] mb-4 font-[Merriweather]">
               WHO WE ARE
             </h2>
             <h3 className="text-2xl font-semibold mb-4 tracking-wider">
@@ -68,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" mx-auto flex flex-col gap-16 items-center px-0 py-24 bg-black bg-opacity-10">
+      <section className=" mx-auto flex flex-col gap-16 items-center px-0 pt-24 bg-black bg-opacity-10">
         <h1 className="font-[Merriweather] w-full text-5xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
           OUR EVENTS
         </h1>
@@ -77,11 +78,36 @@ export default function Home() {
           <EventCard />
         </div>
 
-        <button className="mx-auto mt-1 px-14 py-3 text-2xl font-bold bg-amber-500 rounded-full hover:bg-amber-600 transition-colors">
+        <Link
+          href={"/events"}
+          className="mx-auto mt-1 px-14 py-3 text-2xl font-bold bg-amber-500 rounded-full hover:bg-amber-600 transition-colors"
+        >
           Explore More
-        </button>
+        </Link>
       </section>
-      <section className="w-[90%] mx-auto py-16 px-4">
+      <section className="w-[88%] md:py-0 py-24 mx-auto flex flex-col lg:flex-row items-center gap-12  text-white">
+        <div className="lg:w-1/2 text-center lg:text-left space-y-6">
+          <h1 className="font-[Merriweather] text-4xl lg:text-5xl font-bold tracking-wide text-amber-500">
+            Our Projects
+          </h1>
+          <p className="text-lg max-w-xl mx-auto lg:mx-0">
+            Innovative, purposeful, and crafted with care — our projects are on
+            the way.{" "}
+            <span className="text-amber-400 font-semibold">Coming soon!</span>
+          </p>
+        </div>
+        <div className="lg:w-1/2 relative w-full max-w-xl mx-auto md:block hidden">
+          <Image
+            src="/ourproject.svg"
+            alt="IEEE Mansoura Computer Society Chapter"
+            width={600}
+            height={400}
+            className="rounded-xl shadow-lg object-contain"
+          />
+        </div>
+      </section>
+
+      <section className="w-[90%] mx-auto pb-16 px-4">
         <h2 className="font-[Merriweather] text-center text-amber-500 text-4xl font-bold mb-12 tracking-wide max-sm:text-3xl">
           OUR IMPACT IN NUMBERS
         </h2>

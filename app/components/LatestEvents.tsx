@@ -99,12 +99,12 @@ export default function LatestEvents() {
                                   {event.title}
                                 </h3>
                                 <span className="text-cyan-400 text-sm font-mono">
-                                  {event.date}
+                                  {event.details.dateFrom}
                                 </span>
                               </div>
 
                               <p className="text-gray-300 text-xs leading-relaxed line-clamp-4">
-                                {event.description}
+                                {event.subtitle}
                               </p>
 
                               <Button

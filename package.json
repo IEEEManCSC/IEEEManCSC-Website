@@ -41,6 +41,7 @@
     "use-debounce": "^10.0.4"
   },
   "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -1,5 +1,7 @@
 // components/Countdown.tsx
 "use client";
+import { cn } from "@/lib/utils";
+import { ClassValue } from "clsx";
 import { useState, useEffect, useMemo } from "react";
 
 interface TimeLeft {
@@ -18,7 +20,13 @@ function calculateTimeLeft(targetTs: number): TimeLeft {
   };
 }
 
-export default function Countdown({ target }: { target: string }) {
+export default function Countdown({
+  target,
+  className,
+}: {
+  target: string;
+  className: ClassValue;
+}) {
   // parse "DD/MM/YYYY" just once
   const targetTs = useMemo(() => {
     const [dd, mm, yyyy] = target.split("/").map(Number);
@@ -35,7 +43,7 @@ export default function Countdown({ target }: { target: string }) {
   }, [targetTs]);
 
   return (
-    <div className="flex gap-8">
+    <div className={cn("flex gap-8", className)}>
       {[
         { label: "Days", value: time.days },
         { label: "Hours", value: time.hours },

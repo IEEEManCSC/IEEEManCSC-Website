@@ -65,7 +65,13 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        merriweather: ["var(--font-merriweather)"],
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/container-queries"),
+  ],
 };

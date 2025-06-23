@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cairo } from "next/font/google";
+import { Cairo, Merriweather } from "next/font/google";
 import Nav from "@/app/components/Nav";
 import Footer from "./components/Footer";
 
 const cairo = Cairo({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+});
+export const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-merriweather",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="custom-scrollbar">
-      <body className={`${cairo.className}  antialiased bg-[#141414] `}>
+      <body
+        className={`${cairo.className} ${merriweather.variable}   antialiased bg-[#141414]  overflow-x-hidden`}
+      >
         <Nav />
         {/* <NavBar />
         <section className=" pt-36 pb-20 lg:pt-52">{children}</section>

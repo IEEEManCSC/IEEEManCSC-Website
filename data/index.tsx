@@ -1,39 +1,6 @@
 import { MdGroups, MdEvent, MdHandshake, MdPerson } from "react-icons/md";
 import { LuBadgeCheck } from "react-icons/lu";
-import { ReactElement } from "react"; // Add this import
-
-interface StatItem {
-  icon: ReactElement;
-  count: string;
-  label: string;
-}
-
-interface Service {
-  id: number;
-  title: string;
-  description: string;
-  outlineIcon: string;
-  filledIcon: string;
-}
-
-interface Event {
-  id: string;
-  title: string;
-  subtitle: string;
-  image: string;
-  details: {
-    dateFrom: string;
-    dateTo: string;
-    location: string;
-    content?: string;
-    sessionsNumber: string;
-  };
-  description: {
-    icon?: string;
-    title: string;
-    content: string[];
-  }[];
-}
+import { Service, StatItem, Event, BoardMember, Heads } from "@/app/types";
 
 export const services: Service[] = [
   {
@@ -92,7 +59,7 @@ export const events: Event[] = [
     title: "Code Steps 4.0",
     subtitle:
       "The event successfully engaged young students across two schools. A total  of 20 volunteers from the chapter participated—4 served as instructors,  while 16 acted as assistants. ",
-    image: "/events/code-step.png",
+    image: "/events/code-step.svg",
     details: {
       dateFrom: "22/5/2025",
       dateTo: "24/5/2025",
@@ -245,5 +212,152 @@ export const events: Event[] = [
         ],
       },
     ],
+  },
+];
+export const board: BoardMember[] = [
+  {
+    id: 1,
+    name: "Ola Mohamed",
+    role: "Vice Board",
+    image: "/board/ola.svg",
+    socials: {
+      linkedin: "http://linkedin.com/in/ola-mohamed-6673441b1 ",
+      github: "https://github.com/0laM0hamed ",
+    },
+  },
+  {
+    id: 2,
+    name: "Dr. Sherif Kishk",
+    role: "Branch Counselor",
+    image: "/board/sherifkishk.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/kishk-sherif/",
+      email: "shkishk@mans.edu.eg",
+    },
+  },
+  {
+    id: 3,
+    name: "Ahmed Adel",
+    role: "Board",
+    image: "/board/ahmedwafdy.svg",
+    socials: {
+      email: "ahmedadelwafdy782@gmail.com",
+      github: "https://github.com/AhmedAdelWafdy7",
+      linkedin: "https://www.linkedin.com/in/ahmed-wafdy-094567242/",
+    },
+  },
+  {
+    id: 4,
+    name: "Hossam Mohsen",
+    role: "Webmaster",
+    image: "/board/hossam.svg",
+    socials: {
+      email: "hosam.mohsen13@gmail.com",
+      linkedin: "https://www.linkedin.com/in/hossammohsen/",
+    },
+  },
+  {
+    id: 5,
+    name: "Ammar Yasser",
+    role: "Treasurer",
+    image: "/board/ammar.svg",
+    socials: {
+      email: "ammarsleem321@gmail.com",
+      linkedin: "https://www.linkedin.com/in/ammaryoussef",
+    },
+  },
+  {
+    id: 6,
+    name: "Zahraa Ragab",
+    role: "Secretary",
+    image: "/board/zahraa.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/zahraa-ragab-1789b1266/",
+      email: "zahraaragab2002@gmail.com",
+    },
+  },
+];
+
+export const heads: Heads[] = [
+  {
+    id: 1,
+    name: "Aya Bedair",
+    role: "Embedded Systems",
+    image: "/comittesboard/headembedded.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/aya-bedair-38905b278/",
+      github: "https://github.com/ayabedair",
+    },
+  },
+  {
+    id: 2,
+    name: "Mohamed Elsayed",
+    role: "Flutter",
+    image: "/comittesboard/headmobile.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mosayyyed",
+      github: "https://github.com/mosayyyed",
+    },
+  },
+  {
+    id: 3,
+    name: "Ahmed Ayman",
+    role: "Ui/Ux",
+    image: "/comittesboard/avatar.svg",
+    socials: {
+      github: "https://www.behance.net/ahmedayman218",
+      linkedin: "https://www.linkedin.com/in/ahmed-rakha-c/",
+    },
+  },
+  {
+    id: 4,
+    name: "Mohamed Kardosha",
+    role: "Data Science",
+    image: "/comittesboard/headdatascience.svg",
+    socials: {
+      github: "https://github.com/mhmdkardosha",
+      linkedin: "https://www.linkedin.com/in/mohamedkardosha/",
+    },
+  },
+  {
+    id: 5,
+    name: "Nabil Mohamed",
+    role: "Front-End",
+    image: "/comittesboard/headfront.svg",
+    socials: {
+      github: "https://github.com/N0ble-dev",
+      linkedin:
+        "https://www.linkedin.com/in/n0ble-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  },
+  {
+    id: 6,
+    name: "Gamal Abdelnasser",
+    role: "Cyber Security",
+    image: "/comittesboard/avatar.svg",
+    socials: {
+      linkedin: "https://github.com/saifsweelam",
+      github: "https://github.com/saifsweelam",
+    },
+  },
+  {
+    id: 7,
+    name: "Mohamed Wael",
+    role: " Data Engineering ",
+    image: "/comittesboard/headdataeng.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mohamedwaelelsamman/",
+      github: "https://github.com/Welloz03",
+    },
+  },
+  {
+    id: 8,
+    name: "Seif Sweilam",
+    role: "Backend",
+    image: "/comittesboard/headback.svg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/saifsweelam/",
+      github: "https://github.com/saifsweelam",
+    },
   },
 ];

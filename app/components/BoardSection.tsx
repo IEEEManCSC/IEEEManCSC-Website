@@ -22,7 +22,8 @@ export default function BoardSection({
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
-        {members.map((member) => (
+        {/* First 6 cards: one per cell, centered */}
+        {members.slice(0, 6).map((member) => (
           <BoardCard
             key={member.id}
             name={member.name}
@@ -31,6 +32,22 @@ export default function BoardSection({
             socials={member.socials}
           />
         ))}
+
+        {/* Last row (2 cards) centered as a group */}
+        {members.length > 6 && (
+          <div className="col-span-full flex justify-center gap-6 md:gap-20 md:flex-row flex-col">
+            {members.slice(6).map((member) => (
+              <div className="" key={member.id}>
+                <BoardCard
+                  name={member.name}
+                  role={member.role}
+                  image={member.image}
+                  socials={member.socials}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

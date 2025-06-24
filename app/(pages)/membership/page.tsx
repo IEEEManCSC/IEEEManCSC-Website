@@ -1,6 +1,7 @@
 import BlackMainSection from "@/app/components/BlackMainSection";
 import Image from "next/image";
 import BorderedBlackSection from "@/app/components/BorderedBlackSection";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -25,9 +26,12 @@ const page = () => {
               Exclusive Access To Research Papers, Courses, Competitions,
               Scholarships, And Training — All For An Affordable Fee.
             </p>
-            <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full md:text-lg text-base  transition duration-300">
+            <Link
+              href={"https://www.ieee.org/membership/index.html"}
+              className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full md:text-lg text-base  transition duration-300"
+            >
               Become an IEEE member
-            </button>
+            </Link>
           </div>
 
           <div className="relative w-full h-auto md:block hidden md:overflow-hidden md:pb-0 md:mb-[-250px]">

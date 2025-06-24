@@ -3,9 +3,10 @@ import Logo from "./components/Logo";
 import CornerBrackets from "@/components/ui/CornerBrackets";
 import GoalCard from "./components/GoalCard";
 import EventCard from "./components/EventCard";
-import { services, stats } from "@/data/index";
-import Link from "next/link";
+import { services, stats, committees } from "@/data/index";
 
+import Link from "next/link";
+import BlackMainSection from "@/app/components/BlackMainSection";
 export default function Home() {
   return (
     <>
@@ -68,18 +69,67 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <BlackMainSection className="text-center relative bg-[url('/bgcomitte.svg')] bg-contain">
+        {/* Heading */}
+        <h2 className="text-4xl font-bold text-[#F7A500] mb-4 font-[Merriweather]">
+          OUR COMMITTEES
+        </h2>
+        <p className="text-gray-300 text-lg leading-8 tracking-wider mb-12">
+          EIGHT COMMITTEES, ONE JOURNEY OF PASSION AND GROWTH.
+        </p>
 
-      <section className=" mx-auto flex flex-col gap-16 items-center px-0 pt-24 bg-black bg-opacity-10">
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          {committees.map((c) => (
+            <div
+              key={c.id}
+              className={`
+              group relative flex flex-col items-center justify-center
+              bg-[#1f1f1f] rounded-xl py-8 px-4
+              border-b-4 border-[#F7A708]
+              transition-all duration-300 cursor-pointer
+              hover:shadow-[0px_4px_10px_0px_#F7A708]
+              ${c.title === "UI/UX" ? "ring-2 ring-[#F7A708]" : ""}
+            `}
+            >
+              <div className="mb-4">
+                <Image
+                  src={c.icon}
+                  alt={c.title}
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-white font-medium">{c.title}</span>
+            </div>
+          ))}
+        </div>
+
+        <Link
+          href="/commites"
+          className="block w-[15%] mx-auto mt-10  bg-amber-500  hover:bg-amber-600  text-black font-semibold
+                   rounded-full px-6 py-2 transition"
+        >
+          Explore More
+        </Link>
+      </BlackMainSection>
+      <section className="mx-auto flex flex-col gap-16 items-center pt-24 bg-black bg-opacity-10">
         <h1 className="font-[Merriweather] w-full text-5xl font-bold text-center text-amber-500 tracking-[2.4px] max-sm:text-4xl">
           OUR EVENTS
         </h1>
 
-        <div className="w-[90%] flex flex-wrap gap-8 justify-center ">
+        <div
+          className="
+          w-full
+          flex flex-wrap justify-center gap-y-5 gap-x-5 px-4
+        "
+        >
           <EventCard />
         </div>
 
         <Link
-          href={"/events"}
+          href="/events"
           className="mx-auto mt-1 px-14 py-3 text-2xl font-bold bg-amber-500 rounded-full hover:bg-amber-600 transition-colors"
         >
           Explore More

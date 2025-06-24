@@ -1,6 +1,13 @@
 import { MdGroups, MdEvent, MdHandshake, MdPerson } from "react-icons/md";
 import { LuBadgeCheck } from "react-icons/lu";
-import { Service, StatItem, Event, BoardMember, Heads } from "@/app/types";
+import {
+  Service,
+  StatItem,
+  Event,
+  BoardMember,
+  Heads,
+  Committee,
+} from "@/app/types";
 
 export const services: Service[] = [
   {
@@ -59,7 +66,7 @@ export const events: Event[] = [
     title: "Code Steps 4.0",
     subtitle:
       "The event successfully engaged young students across two schools. A total  of 20 volunteers from the chapter participated—4 served as instructors,  while 16 acted as assistants. ",
-    image: "/events/code-step.svg",
+    image: "/events/code-step.png",
     details: {
       dateFrom: "22/5/2025",
       dateTo: "24/5/2025",
@@ -359,5 +366,71 @@ export const heads: Heads[] = [
       linkedin: "https://www.linkedin.com/in/saifsweelam/",
       github: "https://github.com/saifsweelam",
     },
+  },
+];
+export const committees: Committee[] = [
+  {
+    id: 1,
+    title: "UI/UX",
+    description:
+      "Is where creativity meets functionality, guiding you through the art of designing seamless, user-centered digital experiences.",
+    href: "/icons/uiux.svg",
+    icon: "/Committeeslogo/ui.svg",
+  },
+  {
+    id: 2,
+    title: "Frontend",
+    description:
+      "Empowers you to bring digital interfaces to life, combining code, design, and interactivity to craft seamless user experiences.",
+    href: "/icons/frontend.svg",
+    icon: "/Committeeslogo/front.svg",
+  },
+  {
+    id: 3,
+    title: "Flutter",
+    description:
+      "Equips you with the tools to build fast, beautiful, and cross-platform mobile applications using a single codebase.",
+    href: "/icons/flutter.svg",
+    icon: "/Committeeslogo/flutter.svg",
+  },
+  {
+    id: 4,
+    title: "Backend",
+    description:
+      "Dives deep into server-side development, teaching you how to build secure, scalable, and efficient systems that power modern applications.",
+    href: "/icons/backend.svg",
+    icon: "/Committeeslogo/back.svg",
+  },
+  {
+    id: 5,
+    title: "Data Science",
+    description:
+      "Helps you turn raw data into powerful insights using statistics, programming, machine learning tools, and data visualization techniques.",
+    href: "/icons/datascience.svg",
+    icon: "/Committeeslogo/science.svg",
+  },
+  {
+    id: 6,
+    title: "Data Engineering",
+    description:
+      "Teaches you to design data pipelines, manage databases, and optimize data flow for analytics and machine learning.",
+    href: "/icons/dataeng.svg",
+    icon: "/Committeeslogo/engineer.svg",
+  },
+  {
+    id: 7,
+    title: "Embedded Systems",
+    description:
+      "Focuses on designing and programming hardware systems to create smart devices and innovative technology solutions.",
+    href: "/icons/embedded.svg",
+    icon: "/Committeeslogo/embedded.svg",
+  },
+  {
+    id: 8,
+    title: "Cyber Security",
+    description:
+      "Focuses on protecting systems, networks, and data from cyber threats using advanced security techniques and tools.",
+    href: "/icons/cybersec.svg",
+    icon: "/Committeeslogo/cyber.svg",
   },
 ];

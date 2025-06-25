@@ -5,9 +5,10 @@ import CommitteeDetail from "@/app/components/CommitteeDetail";
 export default async function CommitteePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const committee = committeeDetails.find((c) => c.slug === params.slug);
+  const param = await params;
+  const committee = committeeDetails.find((c) => c.slug === param.slug);
 
   if (!committee) {
     notFound();

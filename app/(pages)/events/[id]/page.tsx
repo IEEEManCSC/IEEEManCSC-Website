@@ -59,44 +59,49 @@ export default function EventPage() {
                 borderStyle: "solid",
               }}
             >
-              <div className="flex flex-col gap-4 md:gap-8 w-full justify-center">
-                <div className="flex flex-row items-center gap-2 md:gap-4">
-                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5]">
+              <div className="flex flex-col gap-4 md:gap-6 w-full">
+                <div className="flex items-center gap-2 md:gap-4 flex-wrap">
+                  <span className="text-lg text-[#F5F5F5]">
                     <IoCalendarOutline />
                   </span>
-                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5] tracking-wider">
-                    {event.details.dateFrom} : {event.details.dateTo}
+                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5] tracking-wider break-words">
+                    {event.details.dateFrom} – {event.details.dateTo}
                   </span>
                 </div>
-                <div className="flex flex-row items-center gap-2 md:gap-4">
-                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5]">
+
+                <div className="flex items-center gap-2 md:gap-4 flex-wrap">
+                  <span className="text-lg text-[#F5F5F5]">
                     <IoLocationOutline />
                   </span>
-                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5] tracking-wider">
+                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5] tracking-wider break-words">
                     {event.details.location}
                   </span>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row gap-4 md:gap-0 w-full">
+
+              {/* Content + Sessions - Responsive Fix */}
+              <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-0 w-full flex-wrap mt-6">
                 {event.details.content && (
-                  <>
-                    <div className="flex flex-row items-center gap-1 md:gap-2">
-                      <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5]">
-                        Content:
-                      </span>
-                      <span className="text-sm md:text-md lg:text-xl text-[#F7A500] text-nowrap">
-                        {event.details.content}
-                      </span>
-                    </div>
-                    <div className="hidden md:block w-[33px] h-[2px] md:w-[2px] md:h-[33px] bg-white mx-[0px] md:mx-[43px]"></div>
-                  </>
+                  <div className="flex flex-wrap items-center gap-1 md:gap-2 min-w-0">
+                    <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5]">
+                      Content:
+                    </span>
+                    <span className="text-sm md:text-md lg:text-xl text-[#F7A500] break-words">
+                      {event.details.content}
+                    </span>
+                  </div>
                 )}
 
-                <div className="flex flex-row items-center gap-1 md:gap-2">
-                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5] text-nowrap">
+                {/* Divider */}
+                {event.details.content && (
+                  <div className="hidden md:block w-[33px] h-[2px] md:w-[2px] md:h-[33px] bg-white mx-[0px] md:mx-[43px]"></div>
+                )}
+
+                <div className="flex flex-wrap items-center gap-1 md:gap-2 min-w-0">
+                  <span className="text-sm md:text-md lg:text-xl text-[#F5F5F5]">
                     Number of Sessions:
                   </span>
-                  <span className="text-sm md:text-md lg:text-xl text-[#F7A500] text-nowrap">
+                  <span className="text-sm md:text-md lg:text-xl text-[#F7A500] break-words">
                     {event.details.sessionsNumber}
                   </span>
                 </div>

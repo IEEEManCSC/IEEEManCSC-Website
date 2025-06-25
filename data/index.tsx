@@ -807,7 +807,7 @@ export const committeeDetails: CommitteeDetail[] = [
       },
       {
         id: 13,
-        name: "N0ble-dev",
+        name: "Nabil Mohamed",
         role: "Head",
         image: "/comittesboard/headfront.svg",
         socials: {

@@ -5,7 +5,7 @@ import Link from "next/link";
 import BlackMainSection from "@/app/components/BlackMainSection";
 import BorderedBlackSection from "@/app/components/BorderedBlackSection";
 import LatestEvents from "@/app/components/LatestEvents";
-export default function EventsHero() {
+export default function page() {
   return (
     <>
       <section className="flex items-center justify-center h-[calc(85vh-2rem)] py-10">

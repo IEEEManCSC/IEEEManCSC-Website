@@ -6,7 +6,7 @@ export default function page() {
     <>
       <BoardSection
         title="OUR LEADERSHIP TEAM"
-        description="Our work is powered by creativity, collaboration, and dedication — now it's time to meet the amazing team behind every detail we craft"
+        description="Our vision is to build a collaborative and innovative community that drives positive societal impact through shared knowledge, creativity, and purpose."
         members={board}
       />
 

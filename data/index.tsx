@@ -35,51 +35,54 @@ import {
 export const services: Service[] = [
   {
     id: 1,
-    title: "Web Design",
-    description: "Crafting beautiful interfaces for modern websites.",
+    title: "Technical & Professional Growth",
+    description:
+      "Providing hands-on learning, industry exposure, and career development opportunities",
     outlineIcon: "/icons/web-outline.svg",
     filledIcon: "/icons/web-filled.svg",
   },
   {
     id: 2,
-    title: "App Development",
-    description: "Building smooth and performant mobile apps.",
-    outlineIcon: "/icons/app-outline.svg",
-    filledIcon: "/icons/app-filled.svg",
+    title: "Soft Skills & Innovation",
+    description:
+      "Enhancing creativity, leadership, and problem-solving skills for a well-rounded professional journey.",
+    outlineIcon: "/icons/web-outline.svg",
+    filledIcon: "/icons/web-filled.svg",
   },
   {
     id: 3,
-    title: "Brand Identity",
-    description: "Designing strong visual identities and logos.",
-    outlineIcon: "/icons/brand-outline.svg",
-    filledIcon: "/icons/brand-filled.svg",
+    title: "Community Engagement",
+    description:
+      "Building meaningful connections with peers and industry experts to grow your professional network.",
+    outlineIcon: "/icons/web-outline.svg",
+    filledIcon: "/icons/web-filled.svg",
   },
 ];
 
 export const stats: StatItem[] = [
   {
     icon: <MdGroups size={36} />,
-    count: "+30",
+    count: "+150",
     label: "Members",
   },
   {
     icon: <MdEvent size={36} />,
-    count: "+10",
+    count: "+5",
     label: "Events",
   },
   {
     icon: <MdHandshake size={36} />,
-    count: "+6",
+    count: "+5",
     label: "Partners",
   },
   {
     icon: <LuBadgeCheck size={36} />,
-    count: "+2",
+    count: "+3",
     label: "Years Old",
   },
   {
     icon: <MdPerson size={36} />,
-    count: "+10",
+    count: "+40",
     label: "Mentors",
   },
 ];
@@ -138,7 +141,7 @@ export const events: Event[] = [
     ],
   },
   {
-    id: "victory",
+    id: "victoris3",
     title: "VICTORIS 3.0",
     subtitle:
       "participants with a unique opportunity to showcase their skills, gain  practical experience, and receive recognition for their achievements",
@@ -198,7 +201,7 @@ export const events: Event[] = [
       dateFrom: "15/2/2025",
       dateTo: "26/2/2025",
       location: "ITI Mansoura",
-      content: "Python Fundamentals",
+      content: "AI & Data Lifecycle | DevOps Practices | Data Engineering",
       sessionsNumber: "6 Offline",
     },
     description: [
@@ -206,9 +209,10 @@ export const events: Event[] = [
         icon: "🧪",
         title: "Labs & Participants",
         content: [
+          "Over six Sessions, you’ll dive deep into software engineering best practices, DevOps methodologies, cloud-native technologies, and AI-powered application development.",
+          "The bootcamp culminates in a capstone project where you’ll work in teams to develop an AI-driven predictive maintenance platform.",
           "Weekly hands-on labs focused on applying learned skills.",
           "Participants collaborate in teams to solve real-world problems.",
-          "Projects are reviewed by mentors and domain experts.",
           "Tools like GitHub and cloud credits are provided for support.",
         ],
       },
@@ -232,13 +236,13 @@ export const events: Event[] = [
         ],
       },
       {
-        icon: "📢",
-        title: "Communication Channels",
+        title: "Key Themes",
         content: [
-          "Discord is the primary space for communication and updates.",
-          "Google Classroom or Notion will host materials and deadlines.",
-          "GitHub is used for collaboration and project submissions.",
-          "Official updates and feedback will be shared via email.",
+          "Clean Code & SOLID Principles",
+          "DevOps & CI/CD Pipelines",
+          "Cloud Computing & Microservices",
+          "Docker & Containerization",
+          "Data Engineering & Machine Learning Lifecycle",
         ],
       },
     ],
@@ -247,18 +251,8 @@ export const events: Event[] = [
 export const board: BoardMember[] = [
   {
     id: 1,
-    name: "Ola Mohamed",
-    role: "Vice Board",
-    image: ola,
-    socials: {
-      linkedin: "http://linkedin.com/in/ola-mohamed-6673441b1 ",
-      github: "https://github.com/0laM0hamed ",
-    },
-  },
-  {
-    id: 2,
     name: "Dr. Sherif Kishk",
-    role: "Branch Counselor",
+    role: "Chapter Advisor",
     image: sherif,
     socials: {
       linkedin: "https://www.linkedin.com/in/kishk-sherif/",
@@ -266,14 +260,24 @@ export const board: BoardMember[] = [
     },
   },
   {
-    id: 3,
+    id: 2,
     name: "Ahmed Adel",
-    role: "Board",
+    role: "Chair Person",
     image: wafdy,
     socials: {
       email: "ahmedadelwafdy782@gmail.com",
       github: "https://github.com/AhmedAdelWafdy7",
       linkedin: "https://www.linkedin.com/in/ahmed-wafdy-094567242/",
+    },
+  },
+  {
+    id: 3,
+    name: "Ola Mohamed",
+    role: "Vice-Chair Person",
+    image: ola,
+    socials: {
+      linkedin: "http://linkedin.com/in/ola-mohamed-6673441b1 ",
+      github: "https://github.com/0laM0hamed ",
     },
   },
   {
@@ -398,7 +402,7 @@ export const committees: Committee[] = [
     title: "UI/UX",
     description:
       "Is where creativity meets functionality, guiding you through the art of designing seamless, user-centered digital experiences.",
-    href: "/commites/ui-ux",
+    href: "/committees/ui-ux",
     icon: "/Committeeslogo/ui.svg",
   },
   {
@@ -406,7 +410,7 @@ export const committees: Committee[] = [
     title: "Frontend",
     description:
       "Empowers you to bring digital interfaces to life, combining code, design, and interactivity to craft seamless user experiences.",
-    href: "/commites/frontend",
+    href: "/committees/frontend",
     icon: "/Committeeslogo/front.svg",
   },
   {
@@ -414,7 +418,7 @@ export const committees: Committee[] = [
     title: "Flutter",
     description:
       "Equips you with the tools to build fast, beautiful, and cross-platform mobile applications using a single codebase.",
-    href: "/commites/flutter",
+    href: "/committees/flutter",
     icon: "/Committeeslogo/flutter.svg",
   },
   {
@@ -422,7 +426,7 @@ export const committees: Committee[] = [
     title: "Backend",
     description:
       "Dives deep into server-side development, teaching you how to build secure, scalable, and efficient systems that power modern applications.",
-    href: "/commites/backend",
+    href: "/committees/backend",
     icon: "/Committeeslogo/back.svg",
   },
   {
@@ -430,23 +434,23 @@ export const committees: Committee[] = [
     title: "Data Science",
     description:
       "Helps you turn raw data into powerful insights using statistics, programming, machine learning tools, and data visualization techniques.",
-    href: "/commites/data-science",
-    icon: "/Committeeslogo/science.svg",
+    href: "/committees/data-science",
+    icon: "/Committeeslogo/engineer.svg",
   },
   {
     id: 6,
     title: "Data Engineering",
     description:
       "Teaches you to design data pipelines, manage databases, and optimize data flow for analytics and machine learning.",
-    href: "/commites/data-engineering",
-    icon: "/Committeeslogo/engineer.svg",
+    href: "/committees/data-engineering",
+    icon: "/Committeeslogo/science.svg",
   },
   {
     id: 7,
     title: "Embedded Systems",
     description:
       "Focuses on designing and programming hardware systems to create smart devices and innovative technology solutions.",
-    href: "/commites/embedded-systems",
+    href: "/committees/embedded-systems",
     icon: "/Committeeslogo/embedded.svg",
   },
   {
@@ -454,7 +458,7 @@ export const committees: Committee[] = [
     title: "Cyber Security",
     description:
       "Focuses on protecting systems, networks, and data from cyber threats using advanced security techniques and tools.",
-    href: "/commites/cyber-security",
+    href: "/committees/cyber-security",
     icon: "/Committeeslogo/cyber.svg",
   },
 ];
@@ -633,7 +637,7 @@ export const committeeDetails: CommitteeDetail[] = [
       },
       {
         id: 1,
-        name: "Gamal Abdelnase",
+        name: "Gamal Abdelnaser",
         role: "Head",
         image: avatar,
         socials: {
@@ -692,13 +696,12 @@ export const committeeDetails: CommitteeDetail[] = [
       },
       {
         id: 6,
-        name: "Mohamed Elshahaby",
+        name: "Salma Ahmed",
         role: "M.D",
         image: avatar,
         socials: {
-          github: "https://github.com/Elshahaby",
-          linkedin:
-            "https://www.linkedin.com/in/mohamedelshahabya852277/?locale=en_US",
+          github: "https://www.youtube.com/",
+          linkedin: "https://www.youtube.com/",
         },
       },
     ],
@@ -780,7 +783,7 @@ export const committeeDetails: CommitteeDetail[] = [
       },
       {
         id: 10,
-        name: "Seif El-Din Wael Sweilam",
+        name: "Seif Sweilam",
         role: "Head",
         image: saif,
         socials: {

@@ -47,36 +47,36 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-2 text-sm max-sm:text-xs">
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/events"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       Events
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/committees"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
-                      Partners
-                    </a>
+                      Committes
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/membership"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
-                      Blog
-                    </a>
+                      Membership
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -86,36 +86,36 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-2 text-sm max-sm:text-xs">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/aboutus"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="#goals"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       Goals
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/aboutus"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       Our Leaders
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="#impact"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       We in Numbers
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -125,22 +125,22 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-2 text-sm max-sm:text-xs">
                   <li>
-                    <a
-                      href="mailto:someone@ieee.org"
+                    <Link
+                      href="mailto:csc@ieeemansb.org"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       <FiMail className="h-5 w-5 max-sm:h-4 max-sm:w-4" />
                       Mail
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="https://maps.app.goo.gl/pNd32WMa374EYLGy9"
                       className="hover:text-amber-500 transition-colors flex items-center gap-2"
                     >
                       <FiMapPin className="h-5 w-5 max-sm:h-4 max-sm:w-4" />
                       Location
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -152,7 +152,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
           <p className="text-lg text-neutral-300 text-center max-sm:text-base">
-            Designed by IEEE CS © 2025 All Rights Reserved
+            Designed by IEEE Mansoura CSC © 2025 All Rights Reserved
           </p>
 
           <div className="flex gap-4">

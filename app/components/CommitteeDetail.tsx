@@ -99,29 +99,31 @@ export default function CommitteeDetail({ committee }: { committee: CD }) {
           </div>
 
           {/* Right column: Text + button */}
-          <div className="text-gray-300 md:h-[50%] text-center md:text-left">
-            <h3 className="text-3xl tracking-wider font-bold text-amber-500 uppercase font-[Merriweather] mb-4">
-              Our Videos
-            </h3>
-            <p className="mb-6 text-base md:text-xl leading-9 tracking-wide">
-              Discover a variety of technical videos on our{" "}
+          {committee.youtubeUrl && (
+            <div className="text-gray-300 md:h-[50%] text-center md:text-left">
+              <h3 className="text-3xl tracking-wider font-bold text-amber-500 uppercase font-[Merriweather] mb-4">
+                Our Videos
+              </h3>
+              <p className="mb-6 text-base md:text-xl leading-9 tracking-wide">
+                Discover a variety of technical videos on our{" "}
+                <Link
+                  href={committee.youtubeUrl!}
+                  target="_blank"
+                  className="text-amber-500 hover:underline"
+                >
+                  YouTube channel
+                </Link>
+                , crafted by our mentors and field experts.
+              </p>
               <Link
                 href={committee.youtubeUrl!}
                 target="_blank"
-                className="text-amber-500 hover:underline"
+                className="bg-amber-500 hover:bg-amber-600 text-black font-semibold py-2 px-6 rounded-full md:text-lg text-base transition duration-300"
               >
-                YouTube channel
+                Explore Now
               </Link>
-              , crafted by our mentors and field experts.
-            </p>
-            <Link
-              href={committee.youtubeUrl!}
-              target="_blank"
-              className="bg-amber-500 hover:bg-amber-600 text-black font-semibold py-2 px-6 rounded-full md:text-lg text-base transition duration-300"
-            >
-              Explore Now
-            </Link>
-          </div>
+            </div>
+          )}
         </div>
       </BlackMainSection>
     </>

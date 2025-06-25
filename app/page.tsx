@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-[#0F0F0F] text-white">
+      <section className="py-16 bg-[#0F0F0F] text-white" id="goals">
         <h2 className="text-4xl font-[Merriweather] font-bold text-center text-[#F7A500] mb-12">
           OUR GOALS
         </h2>
@@ -155,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-[90%] mx-auto pb-16 px-4">
+      <section className="w-[90%] mx-auto pb-16 px-4" id="impact">
         <h2 className="font-[Merriweather] text-center text-amber-500 text-4xl font-bold mb-12 tracking-wide max-sm:text-3xl">
           OUR IMPACT IN NUMBERS
         </h2>
@@ -199,7 +199,10 @@ export default function Home() {
         </h2>
 
         <div className="mt-16 flex w-full flex-wrap items-end justify-center gap-20 max-md:mt-10">
-          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800">
+          <Link
+            href="https://www.facebook.com/ITIMansoura"
+            className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800"
+          >
             <div className="relative h-[50%] w-[150px]">
               <Image
                 src="/iti.svg"
@@ -209,9 +212,12 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 200px"
               />
             </div>
-          </div>
+          </Link>
 
-          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full bg-neutral-900 shadow-[0px_3px_3px_rgba(247,165,0,1)]">
+          <Link
+            href="https://telda.app/"
+            className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full bg-neutral-900 shadow-[0px_3px_3px_rgba(247,165,0,1)]"
+          >
             <div className="relative h-[141px] w-[141px]">
               <Image
                 src="/telda.svg"
@@ -221,9 +227,12 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 141px"
               />
             </div>
-          </div>
+          </Link>
 
-          <div className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800">
+          <Link
+            href="https://www.facebook.com/GrootWorkspace"
+            className="relative flex aspect-square min-h-[250px] min-w-60 items-center justify-center rounded-full border-b-[3px] border-amber-500 bg-neutral-800"
+          >
             <div className="relative h-20 w-20">
               <Image
                 src="/grrot.svg"
@@ -233,7 +242,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 80px"
               />
             </div>
-          </div>
+          </Link>
         </div>
       </section>
     </>

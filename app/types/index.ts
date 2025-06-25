@@ -75,7 +75,7 @@ export interface CommitteeDetail {
     id: number;
     name: string;
     role: string;
-    image: string;
+    image: string | StaticImport;
     socials: MemberSocials;
   }[];
 }

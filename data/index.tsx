@@ -13,7 +13,15 @@ import kardosha from "@/public/comittesboard/headdatascience.png";
 import wael from "@/public/comittesboard/headdataeng.png";
 import elsayed from "@/public/comittesboard/headmobile.png";
 import ayman from "@/public/comittesboard/avatar.png";
-import gamal from "@/public/comittesboard/avatar.png";
+import salma from "@/public/comittesboard/salma.png";
+import mariama from "@/public/comittesboard/mariam.png";
+import reham from "@/public/comittesboard/reham.png";
+import wagdy from "@/public/comittesboard/wagdy.png";
+import emad from "@/public/comittesboard/emad.png";
+import youmna from "@/public/comittesboard/youmna.png";
+import omar from "@/public/comittesboard/omar.png";
+import elgamal from "@/public/comittesboard/elgamal.png";
+import avatar from "@/public/comittesboard/avatar.png";
 import {
   Service,
   StatItem,
@@ -356,7 +364,7 @@ export const heads: Heads[] = [
     id: 6,
     name: "Gamal Abdelnasser",
     role: "Cyber Security",
-    image: gamal,
+    image: avatar,
     socials: {
       linkedin:
         "https://www.linkedin.com/in/gamal-abdelnasser-wafa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -472,7 +480,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 2,
         name: "Salma Hossam",
         role: "Vice Head",
-        image: "/comittesboard/viceembedded.svg",
+        image: salma,
         socials: {
           linkedin: "https://www.linkedin.com/in/salma-hossam--/",
           github: "https://github.com/Salma-Hossam1",
@@ -482,7 +490,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 1,
         name: "Aya Bedair",
         role: "Head",
-        image: "/comittesboard/headembedded.png",
+        image: aya,
         socials: {
           linkedin: "https://www.linkedin.com/in/aya-bedair-38905b278/",
           github: "https://github.com/ayabedair",
@@ -492,7 +500,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 3,
         name: "Mariam Ayman",
         role: "M.D",
-        image: "/comittesboard/mdembedded.svg",
+        image: mariama,
         socials: {
           linkedin: "https://www.linkedin.com/in/mariam-elsalamony-b0009b29b/",
           github: "https://github.com/Mariam2552",
@@ -520,7 +528,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 2,
         name: "Farah Osama",
         role: "Vice Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           linkedin: "https://www.linkedin.com/in/farah-osama-b961632b5/",
           github: "https://github.com/FarahOsama511",
@@ -530,7 +538,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 1,
         name: "Mohamed Elsayed",
         role: "Head",
-        image: "/comittesboard/headmobile.png",
+        image: elsayed,
         socials: {
           linkedin: "https://www.linkedin.com/in/mosayyyed",
           github: "https://github.com/mosayyyed",
@@ -540,7 +548,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 3,
         name: "Yomna Osama",
         role: "M.D",
-        image: "/comittesboard/mdmobile.svg",
+        image: youmna,
         socials: {
           linkedin: "https://www.linkedin.com/in/Yomna-Abozaid",
           github: "https://github.com/Yomna-Abozaid",
@@ -569,7 +577,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 2,
         name: "Menna Nasef",
         role: "Vice Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           linkedin: "https://www.linkedin.com/in/menna-nasef-063a3926b",
           github: ":https://www.behance.net/menanassef",
@@ -579,7 +587,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 1,
         name: "Ahmed Ayman",
         role: "Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           linkedin: "https://www.linkedin.com/in/ahmed-rakha-c",
           github: "https://www.behance.net/ahmedayman218",
@@ -589,7 +597,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 3,
         name: "Reham Ahmed",
         role: "M.D",
-        image: "/comittesboard/mdmobile.svg",
+        image: reham,
         socials: {
           linkedin:
             "https://www.linkedin.com/in/reham-ahmed-736145268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -617,7 +625,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 2,
         name: "Mohamed Wagdy",
         role: "Vice Head",
-        image: "/comittesboard/vicecyber.svg",
+        image: wagdy,
         socials: {
           github: "https://github.com/0xkalawy",
           linkedin: "https://www.linkedin.com/in/mohamedwagdy72",
@@ -627,7 +635,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 1,
         name: "Gamal Abdelnase",
         role: "Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/gamal-w",
           linkedin: "https://www.linkedin.com/in/gamal-abdelnasser-wafa",
@@ -637,7 +645,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 3,
         name: "Ahmed Emad",
         role: "M.D",
-        image: "/comittesboard/mdcyber.svg",
+        image: emad,
         socials: {
           github: "https://github.com/ahmed-elgaml11",
           linkedin: "https://www.linkedin.com/in/ahmed-elgaml-03203a289",
@@ -665,7 +673,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 5,
         name: "Kareem Nagah",
         role: "Vice Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/kareemNagah",
           linkedin: "https://www.linkedin.com/in/kareem-nagah-81328022a",
@@ -685,7 +693,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 6,
         name: "Mohamed Elshahaby",
         role: "M.D",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/Elshahaby",
           linkedin:
@@ -715,7 +723,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 8,
         name: "Mariam Yasser",
         role: "Vice Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/Mariam3bdelsalam",
           linkedin: "https://www.linkedin.com/in/mariam-yasser-929805258",
@@ -735,7 +743,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 9,
         name: "Wafaa Ayman",
         role: "M.D",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           linkedin: "https://www.linkedin.com/in/wafaa-ayman-8755121b2",
         },
@@ -763,7 +771,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 11,
         name: "Mohamed Elgamal",
         role: "Vice Head",
-        image: "/comittesboard/viceback.svg",
+        image: elgamal,
         socials: {
           github: "https://github.com/mohamed97163",
           linkedin: "http://linkedin.com/in/mohamed-a-elgamal-91395021b/",
@@ -783,7 +791,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 12,
         name: "Mohamed Elshahaby",
         role: "M.D",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/Elshahaby",
           linkedin:
@@ -813,7 +821,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 14,
         name: "Youssef Mohamed",
         role: "Vice Head",
-        image: "/comittesboard/avatar.png",
+        image: avatar,
         socials: {
           github: "https://github.com/YoussefMohammed93",
           linkedin: "https://www.linkedin.com/in/youssef-mohammed-6893a031b",
@@ -823,7 +831,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 13,
         name: "Nabil Mohamed",
         role: "Head",
-        image: "/comittesboard/headfront.png",
+        image: nabil,
         socials: {
           github: "https://github.com/N0ble-dev",
           linkedin: "https://www.linkedin.com/in/n0ble-dev",
@@ -833,7 +841,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 15,
         name: "Omar M. Kamal",
         role: "M.D",
-        image: "/comittesboard/mdfront.svg",
+        image: omar,
         socials: {
           github: "https://github.com/omarkamal204",
           linkedin: "https://www.linkedin.com/in/omarkamal204",

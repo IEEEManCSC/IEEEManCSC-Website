@@ -668,6 +668,7 @@ export const committeeDetails: CommitteeDetail[] = [
     ],
     roadmapUrl:
       "https://github.com/Welloz03/Data-Engineering-Roadmap-IEEEManCSC-2025",
+    youtubeUrl: "",
     mentors: [
       {
         id: 5,

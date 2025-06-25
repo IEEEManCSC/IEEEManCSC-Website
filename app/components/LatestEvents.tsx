@@ -5,6 +5,9 @@ import { events } from "@/data";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import BlackMainSection from "./BlackMainSection";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function LatestEvents() {
   const [current, setCurrent] = useState(0);
@@ -46,17 +49,17 @@ export default function LatestEvents() {
       <div className=" p-8 h-full">
         <div className="p-8 h-full">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-4 tracking-wider">
+          <div className="text-center mb-16">
+            <h2 className="xl:text-4xl md:text-3xl text-2xl font-bold text-[#F7A708] font-merriweather mb-4 tracking-[5%]">
               LATEST EVENTS
             </h2>
-            <p className="text-gray-300 text-sm tracking-widest">
+            <p className="text-[#F5F5F5F5]/[96.06%] md:text-2xl text-lg tracking-[5%]">
               CATCH OUR LATEST MEMORABLE MOMENTS FROM RECENT EVENTS
             </p>
           </div>
 
           {/* Custom Carousel */}
-          <div className="mb-8 overflow-hidden">
+          <div className="mb-8 ">
             <div className="max-w-7xl mx-auto">
               <div className="overflow-hidden">
                 <div
@@ -67,7 +70,7 @@ export default function LatestEvents() {
                   {Array.from({ length: totalPages }).map((_, pageIndex) => (
                     <div
                       key={pageIndex}
-                      className="w-full flex-shrink-0 grid justify-between px-2 md:px-4 h-[500px]"
+                      className="w-full flex-shrink-0 grid justify-between px-2 md:px-4 h-[500px] gap-12 overflow-visible"
                       style={{
                         gridTemplateColumns: `repeat(${itemsPerPage}, 1fr)`,
                       }}
@@ -80,10 +83,10 @@ export default function LatestEvents() {
                         .map((event) => (
                           <div
                             key={event.id}
-                            className=" rounded-lg overflow-hidden grid grid-rows-subgrid row-span-4 h-[500px] relative"
+                            className=" rounded-lg grid grid-rows-subgrid row-span-4 h-[500px] relative overflow-hidden"
                           >
                             {/* Event Image */}
-                            <div className="absolute inset-0 bottom-1/2">
+                            <div className="absolute inset-0 bottom-1/3">
                               <Image
                                 src={event.image || "/placeholder.svg"}
                                 alt={event.title}
@@ -93,27 +96,38 @@ export default function LatestEvents() {
                             </div>
 
                             {/* Event Content */}
-                            <div className="p-4 grid grid-rows-subgrid row-span-3 relative z-10 row-start-2 items-start content-between">
-                              <div className="flex justify-between items-start">
-                                <h3 className="text-yellow-400 font-bold text-lg">
-                                  {event.title}
-                                </h3>
-                                <span className="text-cyan-400 text-sm font-mono">
-                                  {event.details.dateFrom}
-                                </span>
-                              </div>
-
-                              <p className="text-gray-300 text-xs leading-relaxed line-clamp-4">
-                                {event.subtitle}
-                              </p>
-
-                              <Button
-                                variant="ghost"
-                                className="text-yellow-400 hover:text-yellow-300 hover:bg-yellow-400/10 p-0 h-auto font-semibold self-start w-fit"
+                            <div className="absolute inset-0 bottom-px top-[40%] z-10 flex flex-col">
+                              <BlackMainSection
+                                className={cn(
+                                  "flex-1 !rounded-3xl flex flex-col gap-4 before:!rounded-3xl bg-[#111111CC] backdrop-blur-[20px] !p-6 !pb-14"
+                                )}
                               >
-                                Learn More
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                              </Button>
+                                <div className="flex justify-between items-center gap-2">
+                                  <h3 className="text-[#F7A500] font-bold lg:text-lg text-base truncate font-merriweather">
+                                    {event.title}
+                                  </h3>
+                                  <span className="text-[#F7A500] text-sm font-merriweather text-nowrap">
+                                    {event.details.dateFrom}
+                                  </span>
+                                </div>
+
+                                <p className="text-gray-300 text-xs leading-relaxed line-clamp-4">
+                                  {event.subtitle}
+                                </p>
+
+                                <Link
+                                  className="mt-auto"
+                                  href={`/events/${event.id}`}
+                                >
+                                  <Button
+                                    variant="default"
+                                    className="py-2 px-6 border-b rounded-[12px] border-[#F7A500] w-fit bg-transparent text-[#F7A500] hover:bg-[#F7A500]/10 hover:text-white hover:scale-105 active:scale-95 focus-visible:ring-[#F7A500] transition-all duration-300"
+                                  >
+                                    Learn More
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                  </Button>
+                                </Link>
+                              </BlackMainSection>
                             </div>
                           </div>
                         ))}
@@ -127,17 +141,20 @@ export default function LatestEvents() {
           {/* Navigation Dots */}
           <div className="flex justify-center space-x-2">
             {Array.from({ length: totalPages }).map((_, index) => (
-              <button
+              <Button
                 key={index}
+                variant="default"
                 onClick={() => scrollToPage(index)}
-                className={`w-8 h-8 border flex items-center justify-center text-sm font-mono transition-colors ${
-                  index === current
-                    ? "border-yellow-400 bg-yellow-400/20 text-yellow-400"
-                    : "border-gray-600 text-gray-400 hover:border-cyan-400 hover:text-cyan-400"
-                }`}
+                className={cn(
+                  "p-4 border-b rounded-[12px] border-[#F7A500] w-fit bg-transparent text-[#F7A500] hover:bg-[#F7A500]/10 hover:text-white hover:scale-105 active:scale-95 focus-visible:ring-[#F7A500] transition-all duration-300",
+                  {
+                    "border-b-2 shadow-[0_2px_2px_0_#F7A500] bg-[#1B1B1B]":
+                      index === current,
+                  }
+                )}
               >
                 {index + 1}
-              </button>
+              </Button>
             ))}
           </div>
         </div>

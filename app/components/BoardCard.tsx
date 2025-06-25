@@ -36,6 +36,7 @@ export default function BoardCard({
             width={200}
             height={200}
             className="object-cover"
+            loading="lazy"
           />
         </div>
       </div>

@@ -46,8 +46,8 @@ export default function LatestEvents() {
 
   return (
     <section className="min-h-screen p-8 relative">
-      <div className=" p-8 h-full">
-        <div className="p-8 h-full">
+      <div className=" p-4 h-full">
+        <div className=" h-full">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="xl:text-4xl md:text-3xl text-2xl font-bold text-[#F7A708] font-merriweather mb-4 tracking-[5%]">

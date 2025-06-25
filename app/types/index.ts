@@ -61,3 +61,14 @@ export interface Committee {
   icon: string;
   href: string;
 }
+export interface CommitteeDetail {
+  id: number;
+  title: string;
+  slug: string;
+  tagline: string;
+  intro: string;
+  description: string[];
+  roadmapUrl: string;
+  youtubeUrl?: string;
+  mentors: Heads[];
+}

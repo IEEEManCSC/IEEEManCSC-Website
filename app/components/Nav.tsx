@@ -16,7 +16,6 @@ export default function Nav() {
     { href: "/membership", label: "Member Ship" },
     { href: "/commites", label: "Committees" },
     { href: "/aboutus", label: "About Us" },
-    { href: "/contactus", label: "Contact Us" },
   ];
 
   const getLinkClass = (href: string, isMobile = false) => {
@@ -93,10 +92,10 @@ export default function Nav() {
                 ))}
 
                 <Link
-                  href="#"
+                  href="/contactus"
                   className="mt-4 rounded-full bg-[#F7A500] px-4 py-2 text-center font-semibold text-black hover:bg-yellow-400"
                 >
-                  Join Us
+                  Contact Us
                 </Link>
               </nav>
             </SheetContent>

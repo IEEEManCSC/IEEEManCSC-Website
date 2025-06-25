@@ -1,10 +1,11 @@
 "use client";
 import { MemberSocials } from "@/app/types";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface BoardCardProps {
   name: string;
   role: string;
-  image: string;
+  image: StaticImport;
   socials: MemberSocials;
 }
 import Image from "next/image";
@@ -28,6 +29,8 @@ export default function BoardCard({
       >
         <div className="w-[200px] h-[200px] overflow-hidden border-4 border-transparent">
           <Image
+            quality={80}
+            placeholder="blur"
             src={image}
             alt={name}
             width={200}

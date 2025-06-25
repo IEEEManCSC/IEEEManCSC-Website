@@ -1,3 +1,4 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { ReactElement } from "react";
 
 export interface StatItem {
@@ -43,7 +44,7 @@ export interface BoardMember {
   id: number;
   name: string;
   role: string;
-  image: string;
+  image: StaticImport;
   socials: MemberSocials;
 }
 
@@ -51,7 +52,7 @@ export interface Heads {
   id: number;
   name: string;
   role: string;
-  image: string;
+  image: StaticImport;
   socials: MemberSocials;
 }
 export interface Committee {
@@ -70,5 +71,11 @@ export interface CommitteeDetail {
   description: string[];
   roadmapUrl: string;
   youtubeUrl?: string;
-  mentors: Heads[];
+  mentors: {
+    id: number;
+    name: string;
+    role: string;
+    image: string;
+    socials: MemberSocials;
+  }[];
 }

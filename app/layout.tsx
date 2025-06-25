@@ -3,6 +3,7 @@ import "./globals.css";
 import { Cairo, Merriweather } from "next/font/google";
 import Nav from "@/app/components/Nav";
 import Footer from "./components/Footer";
+import ieeeLogo from "@/public/ieeelogo.png";
 
 const cairo = Cairo({
   subsets: ["latin"],
@@ -15,8 +16,19 @@ export const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "IEEE",
-  description: "IEEE",
+  title: "IEEEManCSC",
+  description:
+    "IEEE Mansoura Computer Society Chapter is considered to be the technical subunit of IEEE ManSB, IEEE ManCSC follows the IEEE Computer Society which is the world’s leading organization of computing and information technology professionals.",
+  openGraph: {
+    images: [
+      {
+        url: ieeeLogo.src,
+        width: 1200,
+        height: 630,
+        alt: "IEEE Mansoura Computer",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

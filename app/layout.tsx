@@ -3,7 +3,7 @@ import "./globals.css";
 import { Cairo, Merriweather } from "next/font/google";
 import Nav from "@/app/components/Nav";
 import Footer from "./components/Footer";
-import ieeeLogo from "@/public/ieeelogo.png";
+import ieeeLogo from "@/public/logo.png";
 
 const cairo = Cairo({
   subsets: ["latin"],

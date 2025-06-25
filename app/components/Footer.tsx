@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FiMail,
   FiMapPin,
@@ -6,7 +7,7 @@ import {
   FiTwitter,
   FiLinkedin,
 } from "react-icons/fi";
-
+import { GrYoutube } from "react-icons/gr";
 export default function Footer() {
   return (
     <footer className="bg-black mx-auto text-neutral-200 py-8 ">
@@ -155,24 +156,24 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4">
-            <a
-              href="#"
+            <Link
+              href="https://www.facebook.com/ieeemancsc"
               className="text-neutral-300 hover:text-amber-500 transition-colors"
             >
               <FiFacebook className="h-6 w-6 max-sm:h-5 max-sm:w-5" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="https://www.youtube.com/c/IEEEManCSC"
               className="text-neutral-300 hover:text-amber-500 transition-colors"
             >
-              <FiTwitter className="h-6 w-6 max-sm:h-5 max-sm:w-5" />
-            </a>
-            <a
-              href="#"
+              <GrYoutube className="h-6 w-6 max-sm:h-5 max-sm:w-5" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/ieeemancsc/posts/?feedView=all"
               className="text-neutral-300 hover:text-amber-500 transition-colors"
             >
               <FiLinkedin className="h-6 w-6 max-sm:h-5 max-sm:w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

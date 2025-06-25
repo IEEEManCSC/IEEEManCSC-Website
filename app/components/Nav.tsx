@@ -6,9 +6,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { CgMenuGridO } from "react-icons/cg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Nav() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -49,13 +51,13 @@ export default function Nav() {
         {/* Join + Mobile sheet trigger */}
         <div className="flex items-center gap-3">
           <Link
-            href="#"
+            href="/contactus"
             className="hidden rounded-full bg-[#F7A500] px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-400 transition md:block"
           >
-            Join Us
+            Contact Us
           </Link>
 
-          <Sheet>
+          <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
                 size="icon"
@@ -85,6 +87,7 @@ export default function Nav() {
                   <Link
                     key={href}
                     href={href}
+                    onClick={() => setOpen(false)}
                     className={getLinkClass(href, true)}
                   >
                     {label}
@@ -93,6 +96,7 @@ export default function Nav() {
 
                 <Link
                   href="/contactus"
+                  onClick={() => setOpen(false)}
                   className="mt-4 rounded-full bg-[#F7A500] px-4 py-2 text-center font-semibold text-black hover:bg-yellow-400"
                 >
                   Contact Us

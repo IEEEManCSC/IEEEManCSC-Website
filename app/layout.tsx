@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: ieeeLogo.src,
+        url: "https://computer.mansoura.ieee.org/logo.png",
         width: 1200,
         height: 630,
         alt: "IEEE Mansoura Computer",

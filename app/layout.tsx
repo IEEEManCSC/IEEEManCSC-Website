@@ -16,7 +16,7 @@ export const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "IEEEManCSC",
+  title: "IEEE Mansoura Computer Society Chapter",
   description:
     "IEEE Mansoura Computer Society Chapter is considered to be the technical subunit of IEEE ManSB, IEEE ManCSC follows the IEEE Computer Society which is the world’s leading organization of computing and information technology professionals.",
   openGraph: {

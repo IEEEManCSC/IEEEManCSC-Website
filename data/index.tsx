@@ -683,7 +683,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 4,
         name: "Mohamed Wael",
         role: "Head",
-        image: "/comittesboard/headdataeng.png",
+        image: wael,
         socials: {
           github: "https://github.com/Welloz03",
           linkedin: "https://www.linkedin.com/in/mohamedwaelelsamman/",
@@ -733,7 +733,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 7,
         name: "Mohamed Kardosha",
         role: "Head",
-        image: "/comittesboard/headdatascience.png",
+        image: kardosha,
         socials: {
           github: "https://github.com/mhmdkardosha",
           linkedin: "https://www.linkedin.com/in/mohamedkardosha/",
@@ -781,7 +781,7 @@ export const committeeDetails: CommitteeDetail[] = [
         id: 10,
         name: "Seif El-Din Wael Sweilam",
         role: "Head",
-        image: "/comittesboard/headback.png",
+        image: saif,
         socials: {
           github: "https://github.com/saifsweelam",
           linkedin: "https://www.linkedin.com/in/saifsweelam/",

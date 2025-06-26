@@ -46,10 +46,10 @@ export default function CommitteeDetail({ committee }: { committee: CD }) {
             <div className="space-y-6 text-gray-300">
               <p className="italic font-semibold">{committee.intro}</p>
 
-              <ul className="list-disc list-inside space-y-4 text-gray-300">
+              <ul className="list-disc list-inside space-y-4 ">
                 {committee.description.map((line, idx) => (
                   <li key={idx} className="leading-relaxed text-amber-500">
-                    {line}
+                    <span className="text-gray-300">{line}</span>
                   </li>
                 ))}
               </ul>

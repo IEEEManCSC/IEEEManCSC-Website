@@ -606,16 +606,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://www.youtube.com/playlist?list=PLJu3s68C-0EAc1KlrzM-eujWvk3z88ekA",
     mentors: [
       {
-        id: 2,
-        name: "Salma Hossam",
-        role: "Vice Head",
-        image: salma,
-        socials: {
-          linkedin: "https://www.linkedin.com/in/salma-hossam--/",
-          github: "https://github.com/Salma-Hossam1",
-        },
-      },
-      {
         id: 1,
         name: "Aya Bedair",
         role: "Head",
@@ -623,6 +613,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           linkedin: "https://www.linkedin.com/in/aya-bedair-38905b278/",
           github: "https://github.com/ayabedair",
+        },
+      },
+      {
+        id: 2,
+        name: "Salma Hossam",
+        role: "Vice Head",
+        image: salma,
+        socials: {
+          linkedin: "https://www.linkedin.com/in/salma-hossam--/",
+          github: "https://github.com/Salma-Hossam1",
         },
       },
       {
@@ -654,16 +654,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://www.youtube.com/watch?v=zxOcSJwYzcQ&list=PLJu3s68C-0EDFYt1pCWqqYSAnIDyFYa4Y",
     mentors: [
       {
-        id: 2,
-        name: "Farah Osama",
-        role: "Vice Head",
-        image: avatar,
-        socials: {
-          linkedin: "https://www.linkedin.com/in/farah-osama-b961632b5/",
-          github: "https://github.com/FarahOsama511",
-        },
-      },
-      {
         id: 1,
         name: "Mohamed Elsayed",
         role: "Head",
@@ -671,6 +661,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           linkedin: "https://www.linkedin.com/in/mosayyyed",
           github: "https://github.com/mosayyyed",
+        },
+      },
+      {
+        id: 2,
+        name: "Farah Osama",
+        role: "Vice Head",
+        image: avatar,
+        socials: {
+          linkedin: "https://www.linkedin.com/in/farah-osama-b961632b5/",
+          github: "https://github.com/FarahOsama511",
         },
       },
       {
@@ -703,16 +703,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://youtube.com/playlist?list=PLJu3s68C-0EBzKfShemgITcNj0gyr53rd&si=jBkeliUVfAWkbzd-",
     mentors: [
       {
-        id: 2,
-        name: "Menna Nasef",
-        role: "Vice Head",
-        image: avatar,
-        socials: {
-          linkedin: "https://www.linkedin.com/in/menna-nasef-063a3926b",
-          github: ":https://www.behance.net/menanassef",
-        },
-      },
-      {
         id: 1,
         name: "Ahmed Ayman",
         role: "Head",
@@ -720,6 +710,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           linkedin: "https://www.linkedin.com/in/ahmed-rakha-c",
           github: "https://www.behance.net/ahmedayman218",
+        },
+      },
+      {
+        id: 2,
+        name: "Menna Nasef",
+        role: "Vice Head",
+        image: avatar,
+        socials: {
+          linkedin: "https://www.linkedin.com/in/menna-nasef-063a3926b",
+          github: ":https://www.behance.net/menanassef",
         },
       },
       {
@@ -751,16 +751,6 @@ export const committeeDetails: CommitteeDetail[] = [
     roadmapUrl: "https://github.com/0xkalawy/IEEE",
     mentors: [
       {
-        id: 2,
-        name: "Mohamed Wagdy",
-        role: "Vice Head",
-        image: wagdy,
-        socials: {
-          github: "https://github.com/0xkalawy",
-          linkedin: "https://www.linkedin.com/in/mohamedwagdy72",
-        },
-      },
-      {
         id: 1,
         name: "Gamal Abdelnaser",
         role: "Head",
@@ -768,6 +758,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           github: "https://github.com/gamal-w",
           linkedin: "https://www.linkedin.com/in/gamal-abdelnasser-wafa",
+        },
+      },
+      {
+        id: 2,
+        name: "Mohamed Wagdy",
+        role: "Vice Head",
+        image: wagdy,
+        socials: {
+          github: "https://github.com/0xkalawy",
+          linkedin: "https://www.linkedin.com/in/mohamedwagdy72",
         },
       },
       {
@@ -800,16 +800,6 @@ export const committeeDetails: CommitteeDetail[] = [
     youtubeUrl: "",
     mentors: [
       {
-        id: 5,
-        name: "Kareem Nagah",
-        role: "Vice Head",
-        image: avatar,
-        socials: {
-          github: "https://github.com/kareemNagah",
-          linkedin: "https://www.linkedin.com/in/kareem-nagah-81328022a",
-        },
-      },
-      {
         id: 4,
         name: "Mohamed Wael",
         role: "Head",
@@ -817,6 +807,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           github: "https://github.com/Welloz03",
           linkedin: "https://www.linkedin.com/in/mohamedwaelelsamman/",
+        },
+      },
+      {
+        id: 5,
+        name: "Kareem Nagah",
+        role: "Vice Head",
+        image: avatar,
+        socials: {
+          github: "https://github.com/kareemNagah",
+          linkedin: "https://www.linkedin.com/in/kareem-nagah-81328022a",
         },
       },
       {
@@ -849,16 +849,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://www.youtube.com/playlist?list=PLJu3s68C-0EACtalImGLmF-6HjK39-wSX",
     mentors: [
       {
-        id: 8,
-        name: "Mariam Yasser",
-        role: "Vice Head",
-        image: avatar,
-        socials: {
-          github: "https://github.com/Mariam3bdelsalam",
-          linkedin: "https://www.linkedin.com/in/mariam-yasser-929805258",
-        },
-      },
-      {
         id: 7,
         name: "Mohamed Kardosha",
         role: "Head",
@@ -866,6 +856,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           github: "https://github.com/mhmdkardosha",
           linkedin: "https://www.linkedin.com/in/mohamedkardosha/",
+        },
+      },
+      {
+        id: 8,
+        name: "Mariam Yasser",
+        role: "Vice Head",
+        image: avatar,
+        socials: {
+          github: "https://github.com/Mariam3bdelsalam",
+          linkedin: "https://www.linkedin.com/in/mariam-yasser-929805258",
         },
       },
       {
@@ -897,16 +897,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://www.youtube.com/playlist?list=PLJu3s68C-0EBKh4sPIRtgMhjOcuwPhYV3",
     mentors: [
       {
-        id: 11,
-        name: "Mohamed Elgamal",
-        role: "Vice Head",
-        image: elgamal,
-        socials: {
-          github: "https://github.com/mohamed97163",
-          linkedin: "http://linkedin.com/in/mohamed-a-elgamal-91395021b/",
-        },
-      },
-      {
         id: 10,
         name: "Seif Sweilam",
         role: "Head",
@@ -914,6 +904,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           github: "https://github.com/saifsweelam",
           linkedin: "https://www.linkedin.com/in/saifsweelam/",
+        },
+      },
+      {
+        id: 11,
+        name: "Mohamed Elgamal",
+        role: "Vice Head",
+        image: elgamal,
+        socials: {
+          github: "https://github.com/mohamed97163",
+          linkedin: "http://linkedin.com/in/mohamed-a-elgamal-91395021b/",
         },
       },
       {
@@ -947,16 +947,6 @@ export const committeeDetails: CommitteeDetail[] = [
       "https://youtube.com/playlist?list=PLJu3s68C-0EAc1KlrzM-eujWvk3z88ekA",
     mentors: [
       {
-        id: 14,
-        name: "Youssef Mohamed",
-        role: "Vice Head",
-        image: avatar,
-        socials: {
-          github: "https://github.com/YoussefMohammed93",
-          linkedin: "https://www.linkedin.com/in/youssef-mohammed-6893a031b",
-        },
-      },
-      {
         id: 13,
         name: "Nabil Mohamed",
         role: "Head",
@@ -964,6 +954,16 @@ export const committeeDetails: CommitteeDetail[] = [
         socials: {
           github: "https://github.com/N0ble-dev",
           linkedin: "https://www.linkedin.com/in/n0ble-dev",
+        },
+      },
+      {
+        id: 14,
+        name: "Youssef Mohamed",
+        role: "Vice Head",
+        image: avatar,
+        socials: {
+          github: "https://github.com/YoussefMohammed93",
+          linkedin: "https://www.linkedin.com/in/youssef-mohammed-6893a031b",
         },
       },
       {

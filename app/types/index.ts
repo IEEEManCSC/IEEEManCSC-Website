@@ -36,7 +36,7 @@ export interface Event {
     src: string;
     alt: string;
     variant: "side" | "center";
-    class?: string;
+    className?: string;
   }[];
 }
 

@@ -154,3 +154,18 @@ body {
     mask-composite: exclude;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .photo-side {
+    max-width: 240px;
+    width: 30%;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-center {
+    max-width: 600px;
+    width: 40%;
+    height: 350px;
+  }
+}

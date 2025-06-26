@@ -154,8 +154,8 @@ export default function EventPage() {
               <div
                 key={idx}
                 className={`
-          relative overflow-hidden rounded-xl shadow-lg
-          w-[85%] h-52 md:${photo.class}
+          relative overflow-hidden rounded-xl shadow-lg w-[85%] h-52
+           ${photo.className}
         `}
               >
                 <Image

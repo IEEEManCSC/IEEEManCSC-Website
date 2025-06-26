@@ -14,9 +14,9 @@ export default function Nav() {
 
   const navItems = [
     { href: "/", label: "Home" },
+    { href: "/committees", label: "Committees" },
     { href: "/events", label: "Events" },
     { href: "/membership", label: "Membership" },
-    { href: "/committees", label: "Committees" },
     { href: "/aboutus", label: "About Us" },
   ];
 

@@ -139,6 +139,26 @@ export const events: Event[] = [
         ],
       },
     ],
+    images: [
+      {
+        src: "/code-images/code2.png",
+        alt: "Embedded Systems Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
+      },
+      {
+        src: "/code-images/code1.png",
+        alt: "Software Development Team",
+        variant: "center" as const,
+        class: `md:w-[40%] md:max-w-[600px] md:h-[350px] md:lg:h-[360px]`,
+      },
+      {
+        src: "/code-images/code3.png",
+        alt: "AI Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
+      },
+    ],
   },
   {
     id: "victoris3",
@@ -147,8 +167,8 @@ export const events: Event[] = [
       "participants with a unique opportunity to showcase their skills, gain  practical experience, and receive recognition for their achievements",
     image: "/events/victories.jpg",
     details: {
-      dateFrom: "25 Aug 2024 12:00 PM",
-      dateTo: "26 Sep 2024 06:00 PM",
+      dateFrom: "25 Aug 2024",
+      dateTo: "26 Sep 2024",
       location: "ITI Mansoura",
       sessionsNumber: "online sessions supervised by expert speakers",
     },
@@ -188,6 +208,91 @@ export const events: Event[] = [
         content: [
           "Winners received financial prizes worth over 90,000 EGP from the National Telecom Regulatory Authority (NTRA). The event ended with a celebration honoring the outstanding participants who made this edition a success.",
         ],
+      },
+    ],
+    images: [
+      {
+        src: "/victory-images/victory2.png",
+        alt: "Embedded Systems Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
+      },
+      {
+        src: "/victory-images/victory1.png",
+        alt: "Software Development Team",
+        variant: "center" as const,
+        class: `md:w-[40%] md:max-w-[600px] md:h-[350px] md:lg:h-[360px]`,
+      },
+      {
+        src: "/victory-images/victory3.png",
+        alt: "AI Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
+      },
+    ],
+  },
+  {
+    id: "dev-duel",
+    title: "Dev Duel 1.0",
+    subtitle:
+      "competition aims to foster innovation, teamwork, and skill development in both technical and non-technical areas.",
+    image: "/events/dev-duel.png",
+    details: {
+      dateFrom: "25 Aug 2024",
+      dateTo: "26 Sep 2024",
+      location: "ITI Mansoura",
+      sessionsNumber: "No sessions",
+    },
+    description: [
+      {
+        title: "Competitions",
+        content: [
+          "Stage One: All teams presented initial solutions and deliverables.",
+          "Stage Two: Top 2 teams per category refined and improved their projects.",
+          "Final Day: Final presentations were judged offline; one winning team per category was selected.",
+        ],
+      },
+      {
+        title: "Vision",
+        content: [
+          "Under the slogan “Innovate Your World,” we aim to build an insightful, innovative, intellectually mature engineering community, aware of market requirements, and contributes to its development.",
+        ],
+      },
+      {
+        title: "How it Went",
+        content: [
+          "covers four major categories: Software, Embedded Systems, Back-end, and Data Science.",
+        ],
+      },
+      {
+        title: "Competitions Details",
+        content: [
+          "Participants are divided into teams, and each team works on a project or problem within their selected category.",
+        ],
+      },
+      {
+        title: "Awards",
+        content: ["Winners received cup and a certificate of appreciation."],
+      },
+    ],
+    images: [
+      {
+        src: "/dev-images/dev-duel2.png",
+        alt: "Software Development Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
+      },
+      {
+        src: "/dev-images/dev-duel3.png",
+        alt: "Embedded Systems Team",
+        variant: "center" as const,
+        class: `md:w-[40%] md:max-w-[600px] md:h-[350px] md:lg:h-[360px]`,
+      },
+      {
+        src: "/dev-images/dev-duel1.png",
+        alt: "AI Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md:h-[240px]",
       },
     ],
   },
@@ -244,6 +349,26 @@ export const events: Event[] = [
           "Docker & Containerization",
           "Data Engineering & Machine Learning Lifecycle",
         ],
+      },
+    ],
+    images: [
+      {
+        src: "/sudo-images/camp2.png",
+        alt: "Embedded Systems Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px] md:h-[210px] md::h-[240px]",
+      },
+      {
+        src: "/sudo-images/camp1.png",
+        alt: "Software Development Team",
+        variant: "center" as const,
+        class: `md:w-[40%] md:max-w-[600px]  md:h-[360px]`,
+      },
+      {
+        src: "/sudo-images/camp3.png",
+        alt: "AI Team",
+        variant: "side" as const,
+        class: "md:w-[30%] md:max-w-[240px]  md:h-[240px]",
       },
     ],
   },

@@ -25,12 +25,18 @@ export interface Event {
     dateTo: string;
     location: string;
     content?: string;
-    sessionsNumber: string;
+    sessionsNumber?: string;
   };
   description: {
     icon?: string;
     title: string;
     content: string[];
+  }[];
+  images: {
+    src: string;
+    alt: string;
+    variant: "side" | "center";
+    class?: string;
   }[];
 }
 

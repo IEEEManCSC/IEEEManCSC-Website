@@ -27,7 +27,7 @@ export const events: EventCardData[] = [
   },
   {
     id: 2,
-    href: "victory",
+    href: "victoris3",
     image: "/topright.svg",
     altText: "VICTORIS 3.0",
     title: "VICTORIS 3.0",
@@ -38,6 +38,16 @@ export const events: EventCardData[] = [
   },
   {
     id: 3,
+    image: "/btnright.svg",
+    href: "dev-duel",
+    altText: "Group Event",
+    title: "Dev Duel 1.0",
+    date: "20/4/2024",
+    description: "Team up for a collaborative coding challenge...",
+    className: "lg:w-[420px] md:w-[calc(50%-60px)] w-[90%]  aspect-square",
+  },
+  {
+    id: 4,
     href: "sudo-ibootcamp",
     image: "/btnleft.svg",
     altText: "sudo-ibootcamp",
@@ -47,16 +57,6 @@ export const events: EventCardData[] = [
       "The Sudo-i Bootcamp empowers you with practical skills in DevOps, cloud technologies, and AI development ...",
     className:
       "lg:w-[700px]  md:w-[calc(50%-60px)] w-[90%]  md:aspect-video aspect-square",
-  },
-  {
-    id: 4,
-    image: "/btnright.svg",
-    href: "sudo-ibootcamp",
-    altText: "Group Event",
-    title: "Group Collaboration",
-    date: "20/4/2024",
-    description: "Team up for a collaborative coding challenge...",
-    className: "lg:w-[420px] md:w-[calc(50%-60px)] w-[90%]  aspect-square",
   },
 ];
 export default function EventCard() {

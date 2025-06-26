@@ -197,7 +197,9 @@ export default function Home() {
         <h2 className="font-[Merriweather] text-center text-4xl font-bold tracking-[2.4px] text-amber-500 max-md:text-4xl">
           OUR PARTNERS
         </h2>
-
+        <p className="text-gray-300 text-lg leading-8 tracking-wider mb-8 text-center max-w-xl mx-auto">
+          Building success through strong collaborations with trusted partners.{" "}
+        </p>
         <div className="mt-16 flex w-full flex-wrap items-end justify-center gap-20 max-md:mt-10">
           <Link
             href="https://www.facebook.com/ITIMansoura"

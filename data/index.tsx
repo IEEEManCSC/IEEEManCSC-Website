@@ -94,8 +94,8 @@ export const events: Event[] = [
       "The event successfully engaged young students across two schools. A total  of 20 volunteers from the chapter participated—4 served as instructors,  while 16 acted as assistants. ",
     image: "/events/code-step.png",
     details: {
-      dateFrom: "22/5/2025",
-      dateTo: "24/5/2025",
+      dateFrom: "22/2/2024",
+      dateTo: "24/2/2024",
       location:
         "Al-Wady Language Schools For Girls, Mansoura College International Schools  ",
       content: "Python Fundamentals",
@@ -238,8 +238,8 @@ export const events: Event[] = [
       "competition aims to foster innovation, teamwork, and skill development in both technical and non-technical areas.",
     image: "/events/dev-duel.png",
     details: {
-      dateFrom: "25 Aug 2024",
-      dateTo: "26 Sep 2024",
+      dateFrom: "10/7/2024",
+      dateTo: "25/7/2024",
       location: "ITI Mansoura",
       sessionsNumber: "No sessions",
     },

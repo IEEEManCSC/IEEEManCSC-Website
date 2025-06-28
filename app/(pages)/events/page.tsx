@@ -67,12 +67,12 @@ export default function page() {
             <div className="w-full flex justify-center">
               <Countdown className="mx-auto w-fit mb-8" target="21/08/2025" />
             </div>
-            <Link
+            {/* <Link
               href="#"
               className="inline-block bg-yellow-500 text-white font-semibold py-3 px-10 rounded-full hover:bg-yellow-600 transition"
             >
               Explore More
-            </Link>
+            </Link> */}
           </div>
         </BorderedBlackSection>
       </BlackMainSection>

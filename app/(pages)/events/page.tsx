@@ -37,11 +37,11 @@ export default function page() {
 
             <div className="mx-auto md:w-[80%] w-[90%] border-t border-gray-700 mb-8"></div>
 
-            <div className="flex items-center justify-center md:space-x-8 space-x-5 mb-8">
+            <div className="flex items-center justify-center md:space-x-8 space-x-4 mb-8">
               <div className="flex items-center space-x-2">
                 <Calendar size={20} className="text-yellow-500" />
-                <span className="md:text-lg text-base md:tracking-wide tracking-normal">
-                  22/5/2025
+                <span className="md:text-lg text-sm md:tracking-wide tracking-normal">
+                  21/8/2025
                 </span>
               </div>
 
@@ -49,8 +49,8 @@ export default function page() {
 
               <div className="flex items-center space-x-2">
                 <MapPin size={20} className="text-yellow-500" />
-                <span className="md:text-lg text-base md:tracking-wide tracking-normal">
-                  ITI Creativa
+                <span className="md:text-lg text-sm md:tracking-wide tracking-normal">
+                  Alex - Cairo
                 </span>
               </div>
 
@@ -58,14 +58,15 @@ export default function page() {
 
               <div className="flex items-center space-x-2">
                 <Clock size={20} className="text-yellow-500" />
-                <span className="md:text-lg text-base md:tracking-wide tracking-normal">
-                  2 Days
+                <span className="md:text-lg text-sm md:tracking-wide tracking-normal">
+                  3 Days
                 </span>
               </div>
             </div>
             <div className="mx-auto md:w-[80%] w-[90%] border-t border-gray-700 mb-8"></div>
-
-            <Countdown className="mx-auto w-fit mb-8" target="14/07/2025" />
+            <div className="w-full flex justify-center">
+              <Countdown className="mx-auto w-fit mb-8" target="21/08/2025" />
+            </div>
             <Link
               href="#"
               className="inline-block bg-yellow-500 text-white font-semibold py-3 px-10 rounded-full hover:bg-yellow-600 transition"
